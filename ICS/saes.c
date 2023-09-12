@@ -1,3 +1,4 @@
+// A Simplified AES Algorithm
 #include <stdio.h>
 
 int read(char str[])
@@ -68,7 +69,7 @@ int main()
 
 	printf("In Binary: ");
 	for(int i=0;i<16;i++)
-		printf("%c%c", bpl[i], (i+1)%4 ? 0 : ' ');
+		printf("%c %s", bpl[i], (i+1)%4 ? "\b" : " \b");
 	printf("\nIn Decimal: %u", pl);
 
 
@@ -81,7 +82,7 @@ int main()
 
 	printf("In Binary: ");
 	for(int i=0;i<16;i++)
-		printf("%c%c", bkey[i], (i+1)%4 ? 0 : ' ');
+		printf("%c %s", bkey[i], (i+1)%4 ? "\b" : " \b");
 	printf("\nIn Decimal: %u", key);
 
 	//splitting key into w0 and w1
