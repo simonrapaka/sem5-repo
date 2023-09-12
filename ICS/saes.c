@@ -95,8 +95,8 @@ int main()
 	printf("\n\nAfter Addroundkey: %x", pl);
 
 	//Round 1
-	//Nibble Substitution
 	printf("\n\nRound 1:");
+	//Nibble Substitution
 	pl = sbox[pl >> 12] << 12 | sbox[(pl >> 8) % 16] << 8 | sbox[(pl >> 4) % 16] << 4 | sbox[pl % 16];
 	printf("\nAfter Nibble Substitution: %x", pl);
 	//ShiftRow(Swaps 2nd and 4th nibbles)
