@@ -171,13 +171,13 @@ int main()
 	printf("\n\nAfter AddRoundKey: %x", pl);
 	//Round 2 end
 
-	printf("\n\nPlaintext(in hex): %x", pl2);
+	printf("\n\nPlaintext(in hex): %04x", pl2);
 	printf("\nIn Binary: ");
 	for(int i=0;i<16;i++)
 		printf("%c %s", bpl[i], (i+1)%4 ? "\b" : " \b");
 	printf("\nIn Decimal: %u", pl2);
 
-	printf("\n\nCipherText(in hex): %x", pl);
+	printf("\n\nCipherText(in hex): %04x", pl);
 	hextobin2(pl, bpl);
 	printf("\nIn Binary: ");
 	for(int i=0;i<16;i++)
