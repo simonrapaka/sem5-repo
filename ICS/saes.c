@@ -174,14 +174,14 @@ int main()
 	printf("\n\nPlaintext(in hex): %x", pl2);
 	printf("\nIn Binary: ");
 	for(int i=0;i<16;i++)
-		printf("%c%c", bpl[i], (i+1)%4 ? 0 : ' ');
+		printf("%c %s", bpl[i], (i+1)%4 ? "\b" : " \b");
 	printf("\nIn Decimal: %u", pl2);
 
 	printf("\n\nCipherText(in hex): %x", pl);
 	hextobin2(pl, bpl);
 	printf("\nIn Binary: ");
 	for(int i=0;i<16;i++)
-		printf("%c%c", bpl[i], (i+1)%4 ? 0 : ' ');
+		printf("%c %s", bpl[i], (i+1)%4 ? "\b" : " \b");
 	printf("\nIn Decimal: %u", pl);
 
 	return 0;
