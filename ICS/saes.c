@@ -53,7 +53,7 @@ void hextoint(char *in,  unsigned short int *o)
 int main()
 {
 	char tkey[4] = {0}, tpl[4], bkey[16] = {0}, bpl[16] = {0};
-	unsigned short int key = 0,pl = 0,pl2, key2, key3;
+	unsigned short key = 0,pl = 0,pl2, key2, key3;
 	unsigned char w0,w1,gw1,w2,w3,gw3,w4,w5;
 	unsigned char sbox[16] = {9,4,10,11,13,1,8,5,6,2,0,3,12,14,15,7};
 	unsigned char mixcol[16] = {4,8,0xc,3,7,0xb,0xf,6,2,0xe,0xa,5,1,0xd,9};
