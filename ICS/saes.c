@@ -1,4 +1,4 @@
-// A Simplified AES Algorithm
+// A Simplified AES Algorithm - Encryption Only
 #include <stdio.h>
 
 int read(char str[])
